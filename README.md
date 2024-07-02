@@ -15,7 +15,18 @@
   2. `npm run start`
   3.  URL : `http://localhost:3000`
      
-  
+  # Note
+  I have not used mongoDB, because i would be using only one query using mongoose as my ORM
+
+  ``` await model.find({}); ```
+
+  where the model object is the used by mongoose to interact with the mongo db database.
+
+  also the query in MongoDB without mongoose would be 
+
+  ``` db.collection.find({}) ```
+
+  Also I havent used Sass in my application because i have written extremely less css but if i had to use sass , i would only be using variables for this problem which i can reuse in the future and font details.
   
   
   
