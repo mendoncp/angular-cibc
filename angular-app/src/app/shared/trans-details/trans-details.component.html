@@ -1,0 +1,24 @@
+
+<section>
+    <h3>Transaction Details</h3>
+</section>
+<section *ngIf="transaction_dtls">
+<table>
+    
+    <tr>
+        <td>Transaction Id</td>     
+        <td>{{ transaction_dtls.id }}</td>
+    </tr>
+    <tr>    
+        <td>Transaction Date</td>     
+        <td>{{ transaction_dtls.date }}</td>
+    </tr>
+    <tr>
+        <td>Transaction Comments</td>     
+        <td>{{ transaction_dtls.Comments }}</td>  
+    </tr> 
+  </table>
+</section>
+<section *ngIf="!transaction_dtls">
+   <h3>NO TRANSACTIONS FOUND !</h3>
+</section>

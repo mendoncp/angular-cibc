@@ -1,0 +1,18 @@
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Date</th>
+      <th>Comments</th>
+      <th>Action</th>
+    </tr>
+    <ng-container *ngFor="let transaction of transactions">
+    <tr>
+     <td>{{ transaction.id }}</td>
+      <td>{{ transaction.date }}</td>
+      <td contenteditable='true'>{{ transaction.Comments }}</td>
+      <td><a [routerLink]="['/details', transaction.id]">{{ transaction.actions }}</a></td>
+    </tr>
+  </ng-container>
+    <tr>
+    </tr>
+  </table>
