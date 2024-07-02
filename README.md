@@ -13,6 +13,7 @@
   Run the following commands in the transactions-api-test folder : \ 
   1. `npm install`
   2. `npm run start`
+  3.  URL : `http://localhost:3000`
      
   
   
